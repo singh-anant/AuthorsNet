@@ -1,0 +1,87 @@
+.Write {
+  margin-top: 2em;
+  margin-left: 2em;
+  margin-right: 2em;
+  display: flex;
+  gap: 2em;
+}
+.Write .content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.Write .content input {
+  padding: 1em;
+  border: 1px solid black;
+}
+.Write .content .menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+}
+.Write .content .menu .editorContainer {
+  overflow: scroll;
+  /* border: 1px solid black; */
+}
+
+.editorContainer .editor {
+  height: 20em;
+  border: none;
+  /* background-color: blue; */
+}
+.Write .menu .item {
+  border: 1px solid #323232;
+  padding: 1em;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 20px;
+  color: #323232;
+}
+.Write .menu .item h1 {
+  font-size: 30px;
+}
+.Write .menu .item .file {
+  text-decoration: underline;
+  cursor: pointer;
+}
+.Write .menu .item .buttons {
+  display: flex;
+  justify-content: space-around;
+}
+.Write .menu .item .buttons button {
+  cursor: pointer;
+  margin-top: 1em;
+  border: none;
+  width: max-content;
+  padding: 1em 2em;
+  color: whitesmoke;
+  background-color: rgb(50, 50, 50);
+  transition: 0.5s ease-in-out;
+  font-size: 15px;
+  border-radius: 20px;
+}
+.Write .menu .item .buttons button:hover {
+  color: white;
+  background-color: black;
+}
+.Write .menu .item .category {
+  display: flex;
+  gap: 0.9em;
+}
+.Write .menu .item .category .radioinput {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  justify-items: center;
+  gap: 0.8em;
+}
+
+.Write .menu .item .category .labelcategory {
+  display: flex;
+  flex-direction: column;
+  gap: 0em;
+}

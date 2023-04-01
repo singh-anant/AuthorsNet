@@ -1,0 +1,52 @@
+.auth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  /* For changing background color */
+  background-color: #ddd0c8;
+}
+
+.auth h1 {
+  font-size: 40px;
+  color: #323232;
+  margin-bottom: 1em;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  background-color: #ddd0c8;
+  width: 20em;
+  gap: 10px;
+  height: 15em;
+}
+
+form input {
+  padding: 1em;
+  border: none;
+  border-bottom: 1px solid black;
+  background-color: #ddd0c8;
+  font-size: 15px;
+}
+
+form button {
+  margin-top: 0.8em;
+  padding: 1em;
+  border: none;
+  background-color: #323232;
+  cursor: pointer;
+  color: rgba(255, 255, 255, 0.895);
+  border-radius: 25px;
+}
+form button:hover {
+  background-color: black;
+  color: rgb(255, 255, 255);
+}
+
+form p {
+  color: red;
+  font-size: 14px;
+}

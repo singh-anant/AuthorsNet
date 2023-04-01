@@ -1,0 +1,77 @@
+.home {
+  margin: 2em;
+}
+.content .link {
+  text-decoration: none;
+  color: black;
+}
+
+.home .posts {
+  margin-top: 5em;
+  display: flex;
+  flex-direction: column;
+  gap: 3em;
+  /* background-color: red; */
+}
+.home .posts .post {
+  display: flex;
+  /* background-color: green; */
+}
+
+.home .posts .post:nth-child(2n + 1) {
+  flex-direction: row-reverse;
+}
+
+.home .posts .post .img {
+  flex: 2;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.home .posts .post .img img {
+  /* width: 100%; */
+  margin-left: 5em;
+  max-width: 20em;
+  object-fit: cover;
+  border-radius: 8px;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+    rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+}
+
+.home .content {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+.home .content h1 {
+  font-size: 30px;
+  line-height: 30px;
+}
+.home .content p {
+  /* width: 50ch; */
+  width: 50ch;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font-size: 20px;
+  line-height: 30px;
+}
+
+.home .content button {
+  cursor: pointer;
+  border: none;
+  width: max-content;
+  padding: 12px 22px;
+  color: whitesmoke;
+  background-color: rgb(50, 50, 50);
+  transition: 0.5s ease-in-out;
+  font-size: 20px;
+}
+.home .content button:hover {
+  color: white;
+  background-color: black;
+}
+
+@media only screen and (max-width: 1081px) {
+}

@@ -1,0 +1,130 @@
+@import url("https://fonts.googleapis.com/css2?family=Alkatra:wght@700&family=Montserrat:ital,wght@0,800;0,900;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,800;0,900;1,700;1,800;1,900&display=swap");
+.navbar {
+  /* position: fixed; */
+  background-color: #ddd0c8;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 80px;
+  padding: 0 2rem;
+  color: #323232;
+}
+
+.container .link {
+  text-decoration: none;
+  color: #323232;
+  font-size: 30px;
+  margin: 0 1rem;
+}
+
+.container .link:hover {
+  color: black;
+}
+
+.container .auth {
+  display: flex;
+  flex-direction: row;
+  /* background-color: #889975; */
+  align-items: center;
+  justify-content: space-between;
+  height: inherit;
+  width: 24em;
+}
+
+.navbar .navbtn {
+  padding: 5px;
+  cursor: pointer;
+  background: transparent;
+  border: none;
+  outline: none;
+  color: black;
+  visibility: hidden;
+  opacity: 0;
+  font-size: 30px;
+}
+.navbar .container {
+  display: flex;
+  align-items: center;
+}
+
+.navbar .logo {
+  /* position: relative; */
+  text-decoration: none;
+  color: #323232;
+  /* text-align: center; */
+}
+.navbar .logo h1 {
+  font-family: "Alkatra", cursive;
+}
+.navbar .logo:hover {
+  color: black;
+}
+.navbar span {
+  cursor: pointer;
+}
+
+.navbar .write {
+  background-color: #323232;
+  width: 8em;
+  height: 3em;
+  border-radius: 22px;
+  transition: 0.1s ease-in-out;
+}
+.navbar .write .link {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.816);
+  /* padding: 0em; */
+  transition: 0.2s ease-in-out;
+}
+
+.navbar .write:hover {
+  background-color: black;
+}
+.navbar .write .link:hover {
+  color: white;
+}
+
+@media only screen and (max-width: 1081px) {
+  .navbar .navbtn {
+    visibility: visible;
+    opacity: 1;
+  }
+  .navbar .container {
+    font-size: 1.8rem;
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-items: center;
+    gap: 1.5rem;
+    background-color: #ddd0c8;
+    transition: 1s;
+    transform: translateY(-100vh);
+  }
+  .navbar .responsive_nav {
+    transform: none;
+  }
+  .container .closebtn {
+    position: absolute;
+    top: 2rem;
+    right: 2rem;
+  }
+  .container .link {
+    font-size: 1.8rem;
+  }
+  .container .auth {
+    flex-direction: column;
+    justify-content: space-between;
+    height: 7em;
+  }
+  .navbar .write {
+    width: 4em;
+    height: 1.9em;
+    border-radius: 25px;
+  }
+}

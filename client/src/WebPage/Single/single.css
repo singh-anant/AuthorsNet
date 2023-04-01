@@ -1,0 +1,110 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.single {
+  display: flex;
+  gap: 5em;
+  margin-left: 2em;
+  margin-right: 2em;
+}
+.content {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6em;
+}
+
+.content img {
+  width: 100%;
+  height: 30em;
+  object-fit: cover;
+}
+.user {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+  /* font-size: 20px; */
+}
+
+.user img {
+  width: 5em;
+  height: 5em;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: -1px;
+}
+
+.info span {
+  font-weight: bold;
+  font-size: 30px;
+}
+.info p {
+  font-size: 20px;
+}
+
+.edit {
+  display: flex;
+  gap: 0.5em;
+}
+.edit img {
+  width: 2em;
+  height: 2em;
+  cursor: pointer;
+}
+
+.content h1 {
+  font-size: 33px;
+}
+.content p {
+  text-align: justify;
+  line-height: 1.6em;
+}
+/* Menu Part */
+.menu {
+  flex: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+.menu h1 {
+  font-size: 30px;
+}
+.menu .post {
+  display: flex;
+  flex-direction: column;
+  gap: 1em;
+}
+
+.post img {
+  width: 100%;
+  height: 20em;
+  object-fit: cover;
+}
+
+.post button {
+  cursor: pointer;
+  /* margin-top: 1em; */
+  border: none;
+  width: max-content;
+  padding: 10px 20px;
+  color: whitesmoke;
+  background-color: rgb(50, 50, 50);
+  transition: 0.5s ease-in-out;
+  font-size: 15px;
+}
+.post button:hover {
+  color: white;
+  background-color: black;
+}
+@media only screen and (max-width: 1081px) {
+  .menu {
+    visibility: hidden;
+  }
+}
