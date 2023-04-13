@@ -14,7 +14,7 @@ const Navbar = () => {
     <div className="navbar">
       <div className="logo">
         <Link className="logo" to="/">
-          <h1>BlogIO</h1>
+          <h1>AuthorsNet</h1>
         </Link>
       </div>
       <div className="container" ref={navRef}>
